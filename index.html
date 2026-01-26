@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Longevity Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Longevity Lab</h1>
+    <p class="subtitle">Learning how daily habits support long-term health.</p>
+
+    <h2>What is Longevity?</h2>
+    <p>
+        Longevity focuses on living a healthier life without extreme diets or “magic solutions”,
+        but instead building habits that support the body over time.
+    </p>
+
+    <div class="section-soft">
+    <h2>Core Pillars</h2>
+
+    <div class="pillars">
+        <div class="card">
+            <h3>🥗 Nutrition</h3>
+            <p>Eating balanced, whole foods helps support the body’s energy, strength, and long-term health.</p>
+        </div>
+
+        <div class="card">
+            <h3>🏃 Movement</h3>
+            <p>Regular movement like walking, exercise, and strength training keeps the body strong and functional.</p>
+        </div>
+
+        <div class="card">
+            <h3>😴 Sleep</h3>
+            <p>Quality sleep allows the body and mind to recover, repair, and perform well each day.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧠 Mental Health</h3>
+            <p>Managing stress, social connections, and having purpose supports long-term mental and emotional well-being.</p>
+        </div>
+    </div>
+</div>
+
+<div class="cta">
+    <h2>Start Your Longevity Journey</h2>
+    <p>Learn the simple daily habits that support a longer, healthier life.</p>
+    <a href="#why-it-matters" class="cta-button">Get Started</a>
+</div>
+
+<div class="signup">
+    <h3>Get weekly longevity tips</h3>
+    <p>No spam. Just simple habits for a longer, healthier life.</p>
+
+    <form id="signup-form">
+        <input type="email" placeholder="Your email address" required>
+        <button type="submit">Join Free</button>
+    </form>
+
+    <p id="success-message" style="display:none; color: green; margin-top: 15px;">
+        Thanks! You’re on the list.
+    </p>
+</div>
+
+<h2 id="why-it-matters">Why it matters</h2>
+    <p>
+        Healthy habits can improve how we feel, move, think, and support well-being over time.
+    </p>
+
+    <p><strong>Disclaimer:</strong> This website is for educational purposes only and does not provide medical advice.</p>
+
+<script>
+    // Get the form and success message elements
+    const form = document.getElementById("signup-form");
+    const successMessage = document.getElementById("success-message");
+
+    // Listen for form submission
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Stop the page from refreshing
+        successMessage.style.display = "block"; // Show the success message
+        form.reset(); // Clear the input
+    });
+</script>
+</body>
+</html>
