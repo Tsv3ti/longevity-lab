@@ -3,11 +3,18 @@ html, body {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f6f8;
-    margin: 0;
-    padding: 40px;
-    color: #1f2937;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f9fafb;
+  color: #111;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 h1 {
@@ -16,7 +23,21 @@ h1 {
 }
 
 h2 {
-    margin-top: 40px;
+    margin-top: 40px;body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f9fafb;
+  color: #111;
+}
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+
     color: #111827;
 }
 
@@ -132,10 +153,26 @@ h2 {
 }
 
 .signup form {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+#success-message {
+  display: none;
+  color: green;
+  margin-top: 15px;
+  width: 100%;
+}
+
+input[type="email"] {
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  flex: 1;             / Input stretches to take available space */
 }
 
 .signup input {
@@ -157,4 +194,21 @@ h2 {
 
 .signup button:hover {
     background-color: #1f6fe0;
+}
+
+button {
+  background: #2563eb;       /* Bright blue /
+  color: white;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #1e40af;       / Darker blue on hover */
+  transform: translateY(-1px);
 }
