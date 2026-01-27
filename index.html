@@ -7,6 +7,8 @@
 </head>
 <body>
 
+    <div class="container">
+
     <h1>Longevity Lab</h1>
     <p class="subtitle">Learning how daily habits support long-term health.</p>
 
@@ -70,16 +72,18 @@
     <p><strong>Disclaimer:</strong> This website is for educational purposes only and does not provide medical advice.</p>
 
 <script>
-    // Get the form and success message elements
-    const form = document.getElementById("signup-form");
-    const successMessage = document.getElementById("success-message");
+const form = document.getElementById('signup-form');
+const successMessage = document.getElementById('success-message');
 
-    // Listen for form submission
-    form.addEventListener("submit", function(event) {
-        event.preventDefault(); // Stop the page from refreshing
-        successMessage.style.display = "block"; // Show the success message
-        form.reset(); // Clear the input
-    });
+form.addEventListener('submit', function(e) {
+  e.preventDefault();         // STOP the page from jumping/reloading
+  successMessage.style.display = 'block';  // show success message
+  form.reset();               // clear the input
+});
+</script>
+    </div>
+
 </script>
 </body>
 </html>
+
