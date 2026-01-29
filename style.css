@@ -212,3 +212,30 @@ button:hover {
   background: #1e40af;       / Darker blue on hover */
   transform: translateY(-1px);
 }
+
+@media (max-width: 480px) {
+  body {
+    padding: 0;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+}
+
+cta-button,
+button {
+  width: 100%;
+  padding: 14px 0;
+  font-size: 16px;
+}
+
+.signup form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.signup input {
+  width: 100%;
+}
