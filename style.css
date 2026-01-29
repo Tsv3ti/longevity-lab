@@ -244,4 +244,10 @@ button {
   body {
     font-size: 16px;
   }
+
+  p,
+  li,
+  a {
+    font-size: 1.05em;
+  }
 }
