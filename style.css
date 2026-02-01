@@ -251,3 +251,7 @@ button {
     font-size: 1.05em;
   }
 }
+
+body {
+  font-size: clamp(16px, 1.1vw, 18px);
+}
