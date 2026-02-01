@@ -255,3 +255,71 @@ button {
 body {
   font-size: clamp(16px, 1.1vw, 18px);
 }
+
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f0f4f8;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p.subtitle {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p.subtitle {
+        font-size: 1rem;
+    }
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero .btn {
+        padding: 10px 25px;
+        font-size: 0.95rem;
+    }
+}
+
+.content {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
