@@ -49,10 +49,6 @@ h3 {
 p  {
     margin-bottom: 16px;
 }
-.pillars {
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
 
 .card {
     background-color: #ffffff;
@@ -323,3 +319,96 @@ body {
     font-size: 1.1rem;
     line-height: 1.6;
 }
+
+.pillars {
+    max-width: 1100px;
+    margin: 80px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.pillars h2 {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.pillar {
+    background-color: #f8f9fb;
+    border: 1px solid #e0e0e0
+    padding: 35px 25px;
+    border-radius: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.pillar h3 {
+    font-size: 1.45rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.pillar p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.pillar:hover {
+    transform: translateY(-6px);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    background-color: #e9edf6;
+}
+
+@media (max-width: 1024px) {
+    .pillars-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .pillars-grid {
+        grid-template-columns: 1fr;
+    }
+}
+    .hero p.subtitle {
+        font-size: 1rem;
+    }
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero .btn {
+        padding: 10px 25px;
+        font-size: 0.95rem;
+    }
+}
+
+.content {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
