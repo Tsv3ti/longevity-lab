@@ -381,3 +381,18 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+@media (max-width: 600px) {
+    .pillar {
+        padding: 28px 22px;
+    }
+
+    .pillar h3 {
+        font-size: 1.35rem;
+    }
+
+    .pillar p {
+        font-size: 1.05rem;
+        line-height: 1.75;
+    }
+}
