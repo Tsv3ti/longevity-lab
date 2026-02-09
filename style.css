@@ -396,3 +396,13 @@ body {
         line-height: 1.75;
     }
 }
+
+@media (max-width: 600px) {
+    .pillars {
+        margin: 60px auto;
+    }
+
+    .pillars-grid {
+        gap: 24px;
+    }
+}
