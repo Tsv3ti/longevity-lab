@@ -419,3 +419,10 @@ body {
         margin-top: 16px;
     }
 }
+
+@media (max-width: 600px) {
+    .cta-button {
+        padding: 14px 22px;
+        font-size: 1.05rem;
+    }
+}
